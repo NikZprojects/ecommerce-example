@@ -2,9 +2,9 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   mode: "jit",
-  purge: ["./pages/* */*.js", "./components/* */*/.js"],
+  purge: ["./pages/**/*.js", "./components/**/*.js"],
   darkmode: false,
-  content: [],
+  content: ["./pages/**/*.js", "./components/**/*.js"],
   theme: {
     extend: {
       fontFamily: {
